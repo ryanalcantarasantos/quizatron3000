@@ -47,7 +47,7 @@ val listaQuestoes = listOf(
 )
 
 @Composable
-fun Pergunta1(modifier: Modifier = Modifier) {
+fun Perguntas(modifier: Modifier = Modifier) {
 
     var indice by remember { mutableStateOf(0) }
     val questao = listaQuestoes[indice]

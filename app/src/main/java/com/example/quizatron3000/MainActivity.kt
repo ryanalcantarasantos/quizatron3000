@@ -28,7 +28,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.listadeexercicios.Pergunta1
 import com.example.quizatron3000.ui.theme.Quizatron3000Theme
 
 class MainActivity : ComponentActivity() {
@@ -38,7 +37,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             Quizatron3000Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Pergunta1(
+                    TelaResultado(
+                        acertos = 1,
+                        total = 3,
+                        onJogarNovamente = { },
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
